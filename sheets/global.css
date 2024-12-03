@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Lobster;    
+
+}
+
+::marker {
+    color: #FFFFFF;
+    }
+
+/* barra de navegação */ 
+
+.logo-login {
+    position: absolute;
+    left: 50px;
+    top: -4px;
+}
+
+.logo-login img{
+    width: 155px;
+
+}
+
+.header-inner {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #F1F1F1;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.imagens-header {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logo {
+    color: #458F36;
+    font-family: "Lobster Regular";
+    position: absolute;
+    left: 60px;
+    text-decoration:underline
+ } 
+
+.navbar>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+ 
+.imagens-header:hover {
+    transform: translateY(-3px);
+    transition: all 0.2s;
+    font-weight: bold;
+
+}
+
+.pin-mapa {
+    width:23px;
+}
+
+/* header */ 
+
+
+header {
+    background-color: rgb(179, 207, 176);
+}
+.header-bottom-side {
+    display: flex;
+    align-items: center;
+    justify-content: 1rem;
+    padding: 1rem;
+}
+
+.header-bottom-left {
+    height: 100%;
+    flex-basis: 50%;
+    margin-left: 50px;
+}
+
+.header-bottom-left h2 {
+    color:#5F8F55;
+
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-right img {
+    width: 100%;
+}
+
+.header-bottom-left button {
+    background-color:#5F8F55;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius:9999px ;
+    color: #F1F1F1;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.header-bottom-left button:hover {
+    background-color: #458F36;
+}
+  
+
+/* media queries */ 
+
+@media (max-width: 800px){
+
+
+    .header-bottom-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+
+    }
+
+
+}
+
+/* main content */
+
+.page-inner-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.cols{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+
+}
+
+.cols-3{
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1rem;
+
+
+}
+.cols-3 img {
+    background-color: #ddd;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+    width: 150px;
+    cursor: pointer;
+}
+
+.texto-bolas {
+    text-align: center;
+    margin-top: 40px;
+    font-family:Quicksand;
+}
+
+.product {
+    display: grid;
+    width: 100px;
+}
+
+/* produtos */
+
+.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+
+}
+.product img{
+    max-width: 270px;
+    background-color:#458F36;
+}
+
+p {
+    font-family: Quicksand;
+}
+
+span{
+    font-family: Quicksand;
+}
+
+/* vantagens */
+
+.vantagens h2{
+    font-family: Quicksand; 
+    color: #5F8F55;
+    
+}
+
+.img-vantagens {
+    width: 130px;
+    display: flex;
+
+}
+
+.vantagens-base {
+    display: flex;
+    margin-left: 190px;
+}
+
+.vantagens-body {
+    margin-bottom: 100px;
+}
+
+
+
+.vantagens p{
+    font-family: Quicksand; 
+    max-width: 425px;
+    margin-right: 100px;
+    display: flex;
+
+}
+
+
+.title {
+    display: relative;
+    text-align: center;
+    margin-right: 1390px;
+    margin-bottom: 50px;
+}
+
+/* depoimento */
+
+.card-wrapper {
+    width: 1350px;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 90px;
+}
+
+.card-list .card-link {
+    width: 450px;
+    height: 160px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-list .card-link h2 {
+    font-family: Quicksand;
+    color: #000;
+}
+
+.card-list .card-link p {
+    font-family: Quicksand;
+    color: #000;
+}
+
+.card-item {
+    display: flex;
+}
+
+.card-list {
+    display: flex;
+}
+
+.slider {
+    margin: 0 auto;
+    height: 400px;
+    align-items: center;
+    margin-left: 150px;
+}
+
+
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    left: 530px;
+    top: 3450px;
+    
+}
+
+.manual-btn {
+    border: 2px solid #458F36;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,2s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #458F36;
+}
+
+.slides input {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    background-color: #F1F1F1;
+    margin-top: -150px;
+    height: 1000px;
+}
+
+.fotter-title{
+    text-align: left;
+    padding: 40px;
+    margin-left:150px ;
+    
+}
+
+.fotter-title p {
+    padding: 15px;
+    margin-left: -15px;
+}
+
+.fotter-title h1 {
+ color: #458F36;
+}
+
+.input-cliente input {
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    left: 190px;
+    top: 3610px;
+    display: block;
+    border-radius: 45px;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    border-style: solid;
+}
+
+.btn-comprar-agora{
+
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+position: absolute;
+width: 400px;
+height: 60px;
+background: #5F8F55;
+border-radius: 45px;
+margin-left: 190px;
+margin-top: 10px;
+}
+
