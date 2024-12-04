@@ -1,0 +1,173 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+    display: flex;
+    gap: 20px;
+}
+
+.product-images {
+    width: 40%;
+}
+
+.product-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    width: 60%;
+}
+
+.product-details h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.product-details .price {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+.product-details .discount {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.product-details select, .product-details button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-details button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.tabs {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    border-bottom: 2px solid #4CAF50;
+    color: #4CAF50;
+}
+
+.reviews {
+    margin: 20px 0;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.recommendations {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.recommendation {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.recommendation .price {
+    color: #4CAF50;
+    margin: 5px 0;
+}
+
+.subscribe-section {
+    background-color: #dfffe2;
+    padding: 20px;
+    text-align: center;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
